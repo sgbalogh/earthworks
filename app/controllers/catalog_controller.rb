@@ -225,8 +225,8 @@ class CatalogController < ApplicationController
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
+
+    config.add_show_tools_partial :web_services
   end
-
-
 
 end

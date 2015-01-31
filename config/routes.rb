@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   resource :feedback_form, path: 'feedback', only: [:new, :create]
   get 'feedback' => 'feedback_forms#new'
+
+  # Add routes for web_services tool
+  get '/catalog/:id/web_services' => 'catalog#web_services', as: 'web_services_catalog'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
